@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+
 import { Post } from '../interfaces/post';
 import { PostService } from '../services/post.service';
 
@@ -9,13 +9,17 @@ import { PostService } from '../services/post.service';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page implements OnInit{
+  post: Post[] = [];
+ 
 
-  constructor() {}
+  constructor(private ps:  PostService) {}
 
   
 
-  ngOnInit(): void {
-  
+  ngOnInit(){
+    this.ps.getPosts().subscribe((post: Post[]) => {
+     return this.post = post;
+    })
 
   }
 
