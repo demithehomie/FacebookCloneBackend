@@ -1,0 +1,7 @@
+{
+  "name": "novo-facebook",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,32 @@
+
+<ion-content>
+
+  <form [formGroup]="formPost" (submit)="criarPost()">
+    
+    <div id="caixinha-de-post">
+      <ion-item>    
+        
+        <ion-input 
+            type="text" 
+            name="post" 
+            id="post"  
+            [(ngModel)]="post.post"  
+            formControlName="post"  
+            class="form-control"
+            ></ion-input>
+  </ion-item>
+
+</div>
+
+
+<div id="botoes-post">
+
+  <ion-buttons>
+  <ion-button type="submit" color="success" >ENVIAR</ion-button>
+
+  <ion-button fill="clear" [routerLink]="['/tabs/tab1']" >VOLTAR</ion-button>
+</ion-buttons>
+</div>
+</form>
+
+</ion-content>

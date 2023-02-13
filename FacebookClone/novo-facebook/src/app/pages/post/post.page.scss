@@ -1,0 +1,16 @@
+#caixinha-de-post {
+    display: flex;
+    margin: auto;
+    align-items: center ;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+#botoes-post {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
