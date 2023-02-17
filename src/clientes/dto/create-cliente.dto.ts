@@ -1,1 +1,4 @@
-export class CreateClienteDto {}
+export class CreateClienteDto {
+    nome: string;
+    email: string;
+}
